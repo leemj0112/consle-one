@@ -16,10 +16,25 @@
                 Money = 10000
             };
 
+            Console.WriteLine("A 송장내용");
+            Console.WriteLine(a.Letter);
+            Console.WriteLine(a.Money);
             GiftBox 배송기사님 = a;
+
+            Console.WriteLine("배송기사님 송장내용");
+            Console.WriteLine(배송기사님.Letter);
+            Console.WriteLine(배송기사님.Money);
 
             a.Letter = "어떻게 지내고 있어?";
             a.Money = 15000;
+
+            Console.WriteLine("A 변경 이후 송장내용");
+            Console.WriteLine(a.Letter);
+            Console.WriteLine(a.Money);
+
+            Console.WriteLine("배송기사님 송장내용");
+            Console.WriteLine(a.Letter);
+            Console.WriteLine(a.Money);
         }
     }
 }
